@@ -19,15 +19,15 @@ class MainActivity : AppCompatActivity() {
     }
     fun fibonacci(numbers:Int): List<Int> {
         var list= ArrayList<Int>()
-        var lower_limit =1
-        var first_num = 0
-        var second_num = 1
-        while (lower_limit<=numbers){
-            print(first_num)
-            val sum = first_num + second_num
-            first_num = second_num
-            second_num = sum
-            lower_limit ++
+        var lowerLimit =1
+        var firstNum = 0
+        var secondNum = 1
+        while (lowerLimit<=numbers){
+            print(firstNum)
+            val sum = firstNum + secondNum
+            firstNum = secondNum
+            secondNum = sum
+            lowerLimit ++
             list+=sum
         }
         return  list
